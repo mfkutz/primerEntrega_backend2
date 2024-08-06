@@ -1,0 +1,27 @@
+<div class="m-2 rounded-4 bg-light p-3 d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <div>
+    <div class="alert">
+      <h1>Bienvenido </h1>
+    </div>
+
+    {{#if isSession}}
+      <div>
+        <a href="/profile" class="btn btn-primary">
+          <i class="bi bi-box-arrow-in-right"></i>
+          Perfil
+        </a>
+      </div>
+    {{else}}
+      <div class="d-flex flex-column gap-2">
+        <a href="/login" class="btn btn-primary">
+          <i class="bi bi-box-arrow-in-right"></i>
+          Iniciar Sesión
+        </a>
+        <a href="/register" class="btn btn-success">
+          <i class="bi bi-pencil-square"></i>
+          Registrese
+        </a>
+      </div>
+    {{/if}}
+  </div>
+</div>
